@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=text]:focus, select:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+label {
+  padding: 5px 5px 5px 0;
+  display: inline-block;
+}
+
+button[type=submit] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  border: #4CAF50 1px solid;
+}
+
+button[type=submit]:hover {
+  background-color: #fff;
+  color: #4CAF50;
+  border: #4CAF50 1px solid;
+}
+
+.container {
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ced4da;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-75 {
+  width: 70%;
+}
+
+.col-100 {
+  width: 98%;
+}
+
+.col-style {
+  float: left;
+  padding: 0.5rem;
+  margin: 1%;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+label#notFound {
+  color: #f00;
+  font-size: 0.65rem;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, .col-100, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
